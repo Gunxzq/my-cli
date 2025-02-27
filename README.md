@@ -8,7 +8,7 @@
 他不存在 vue-axios-vite 这种固定模板，他是 framework+httpLibrary+bundler。
 
 ```
-npm i gun-cli _g
+npm i gun-cli -g
 ```
 
 ## **特点**
