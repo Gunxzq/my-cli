@@ -5,7 +5,7 @@
 ## **项目概述**
 
 一个源于奇思妙想的命令行脚手架，不仅仅只能搭建前端框架，他的行为完全由自定义配置决定。
-他不存在 vue-axios-vite 这种固定模板，他是 framework+httpLibrary+bunder。
+他不存在 vue-axios-vite 这种固定模板，他是 framework+httpLibrary+bundler。
 
 ```
 npm i gun-cli _g
