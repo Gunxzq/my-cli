@@ -3,7 +3,7 @@ export default (data, optionObj) => {
   let packageJson = JSON.parse(data);
 
   let depsToAdd = {
-    script: {},
+    scripts: {},
     dependencies: {},
     devDependencies: {},
   };
@@ -11,6 +11,7 @@ export default (data, optionObj) => {
   let argsObj = {};
 
   Object.keys(optionObj).forEach(key => {
+    if (!optionObj[key]) return;
     let result = optionObj[key].value(argsObj);
     // value函数会返回一个对象，只需要将它合并即可
     argsObj = Object.assign(argsObj, result);
