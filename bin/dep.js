@@ -23,7 +23,7 @@ export default (data, optionObj) => {
     }
     if (optionObj[key].script) {
       let script = optionObj[key].script();
-      depsToAdd.script = Object.assign(depsToAdd.script, script);
+      depsToAdd.scripts = Object.assign(depsToAdd.scripts, script);
     }
   });
 
