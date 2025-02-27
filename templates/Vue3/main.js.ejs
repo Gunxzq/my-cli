@@ -1,0 +1,22 @@
+import { createApp } from 'vue';
+import App from './App.vue';
+<% if(router==='VueRouter'){ %>
+import router from './router';
+<% } %>
+<% if(router==='ElmentPlus'){ %>
+import ElmentPlus from 'element-plus';
+<% } %>
+<% if(store==='Pinia'){ %>
+import pinia from './store';
+<% } %>
+const app = createApp(App);
+<% if(router==='VueRouter'){ %>
+app.use(router)
+<% } %>
+<% if(store==='Pinia'){ %>
+app.use(pinia)
+<% } %>
+<% if(store==='ElmentPlus'){ %>
+app.use(ElmentPlus)
+<% } %>
+app.mount('#app');

@@ -1,0 +1,24 @@
+{
+  "name": "gun-cli",
+  "version": "1.0.0",
+  "description": "一个自用的组合式模板CLI",
+  "main": "index.js",
+  "bin": {
+    "gun-cli": "./bin/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "GUNxzq",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "ejs": "^3.1.10",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^12.4.2",
+    "npm-programmatic": "^0.0.12"
+  }
+}
